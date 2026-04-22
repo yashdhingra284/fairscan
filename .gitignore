@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.db
+*.sqlite3
+
+# ML Models (too large for GitHub)
+backend/model.pkl
+backend/label_encoders.pkl
+backend/adult.csv
+
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Misc
+.DS_Store
+*.log
