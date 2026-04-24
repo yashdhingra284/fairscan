@@ -9,9 +9,9 @@ __pycache__/
 *.sqlite3
 
 # ML Models (too large for GitHub)
-backend/model.pkl
-backend/label_encoders.pkl
-backend/adult.csv
+#backend/model.pkl
+#backend/label_encoders.pkl
+#backend/adult.csv
 
 # Node
 node_modules/
