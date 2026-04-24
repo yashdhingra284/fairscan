@@ -56,7 +56,7 @@ function AnalysisPage() {
     setError("");
     try {
       const response = await axios.get(
-        `http://localhost:8000/analyze/${dataset_id}?sensitive_col=${sensitive_col}`
+        `https://fairscan-backend.onrender.com/analyze/${dataset_id}?sensitive_col=${sensitive_col}`
       );
       setReport(response.data);
     } catch (err) {
@@ -173,7 +173,7 @@ function AnalysisPage() {
                 View All Reports
               </button>
                 <button
-              onClick={() => window.open(`http://localhost:8000/reports/${report.report_id}/pdf?sensitive_col=${activeTab}`, "_blank")}
+              onClick={() => window.open(`https://fairscan-backend.onrender.com/reports/${report.report_id}/pdf?sensitive_col=${activeTab}`, "_blank")}
               className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl transition font-semibold"
                 >
               ⬇ Download PDF Report

@@ -45,7 +45,7 @@ function UploadPage() {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const response = await axios.post("http://localhost:8000/upload", formData);
+      const response = await axios.post("https://fairscan-backend.onrender.com", formData);
       const dataset_id = response.data.dataset_id;
       navigate({ to: "/analysis", search: { dataset_id } });
     } catch (err) {

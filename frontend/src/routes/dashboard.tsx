@@ -25,7 +25,7 @@ function DashboardPage() {
   const fetchReports = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8000/reports");
+      const response = await axios.get("https://fairscan-backend.onrender.com/reports");
       setReports(response.data);
     } catch (err) {
       setError("Failed to load reports. Make sure the backend is running.");
